@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div id="profile-info">
+            <h1>Username: {{ user.username }}</h1>
+            <h1>Birthdate: {{user.birthdate}}</h1>
+            <h1>Email: {{user.email}}</h1>
+            <h1>Squadra: {{user.squadra}}</h1>
+            <h1>Tiro da 3 %: {{ user.percentuale_tiro_3_punti }}</h1>
+        </div>
+        <form id="logout-form" action="/logout" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+
+   
+</body>
+</html>
